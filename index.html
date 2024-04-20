@@ -15,7 +15,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <span id="container-confetti"></span>
+  <header
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out">
+    
     <div class="logo">
       <img src="assets/logo.png" alt="">
       <div>
@@ -29,7 +34,50 @@
     </a>
   </header>
   
-  <main>conteudo</main>
+  <main>
+    <img  
+      data-aos="fade-right"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+      src="assets/papai-noel.png" alt=""
+    >
+
+    <section>
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="300"
+      >BOX MISTERIOSA DO</h2>
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="300"
+      >PAI NATAL</h1>
+      <p class="description"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="500">
+        Viva a magia do Natal com a nossa <strong>Box Natalina</strong>, um presente 
+        diretamente da oficina do Polo Norte do Papai Noel. E adivinhe quem fará a 
+        entrega? Os correios? Nananinanão, será o próprio bom velhinho que se encarrega 
+        da entrega. Garanta já a sua Box misteriosa e transforme este Natal em um 
+        evento verdadeiramente especial. 🎄🎁
+      </p>
+      <div class="buy">
+        <p><sup>$</sup>48.98</p>
+        <div class="buy-button">
+          <span></span>
+          <span></span>
+          <span>
+            <button type="button" onclick="addItem()">COMPRAR</button>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
   
   <script src="./scripts/index.js"></script>
   <script src="./scripts/confetti-effect.js"></script>

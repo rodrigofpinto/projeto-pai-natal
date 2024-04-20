@@ -38,6 +38,7 @@ header {
     height: 40px;
 }
 #cart-count  {
+    display: none;
     position: absolute;
     top: -8px;
     right: -10px;
@@ -45,6 +46,25 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    background: var(--red);
+    background: var(--red-dark);
 
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Inter";
+    font-weight: 300;
+
+}
+@media screen and (max-width: 1266px){
+    header {
+        padding: 0 24px;
+    }
+    .cart{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    header {
+        padding: 0;
+    }
 }
